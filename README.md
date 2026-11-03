@@ -87,4 +87,4 @@ Python, Pandas, NumPy, SciPy, scikit-learn, MLflow e Streamlit.
 ---
 
 **RecoCommerce Brasil** — projeto de portfólio em Ciência de Dados e Sistemas de Recomendação.
-
+![Monitoramento de experimentos no MLflow](docs/images/mlflow-monitoramento.png)
