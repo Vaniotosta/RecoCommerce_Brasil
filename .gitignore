@@ -1,0 +1,81 @@
+# ==================================================
+# AMBIENTE PYTHON
+# ==================================================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ==================================================
+# STREAMLIT E CREDENCIAIS
+# ==================================================
+.streamlit/secrets.toml
+.env
+.env.*
+*.pem
+*.key
+
+# ==================================================
+# MLFLOW, CACHE E ARQUIVOS TEMPORÁRIOS
+# ==================================================
+mlruns/
+.mlflow/
+mlflow.db*
+.cache/
+*.log
+*.tmp
+
+# ==================================================
+# SISTEMA E EDITORES
+# ==================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.claude/
+CLAUDE.md
+
+# ==================================================
+# DADOS BRUTOS E ARQUIVOS INTERMEDIÁRIOS
+# ==================================================
+data/raw/
+data/processed/analise_coortes/
+data/processed/matrizes/
+data/processed/monitoramento_drift/
+data/processed/matriz_cliente_produto.csv
+data/processed/clientes.csv
+data/processed/interacoes_ponderadas.csv
+data/processed/itens_pedido.csv
+data/processed/pedidos.csv
+
+# Ignorar CSVs processados por padrão
+data/processed/*.csv
+
+# Liberar somente os dados necessários ao aplicativo
+!data/processed/produtos.csv
+!data/processed/interacoes.csv
+
+# ==================================================
+# MODELOS: IGNORAR TUDO POR PADRÃO
+# ==================================================
+data/processed/modelos/*
+
+# Liberar a estrutura da versão utilizada pelo aplicativo
+!data/processed/modelos/versoes/
+data/processed/modelos/versoes/*
+!data/processed/modelos/versoes/similaridade_20261102_090621/
+data/processed/modelos/versoes/similaridade_20261102_090621/*
+
+# Liberar somente os arquivos utilizados pelo aplicativo
+!data/processed/modelos/versoes/similaridade_20261102_090621/metadados.json
+!data/processed/modelos/versoes/similaridade_20261102_090621/recomendacoes.csv
+
+# ==================================================
+# ARTEFATOS LOCAIS
+# ==================================================
+artifacts/models/
+artifacts/metrics/
+artifacts/figures/

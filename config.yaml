@@ -1,0 +1,13 @@
+project:
+  name: RecoCommerce Brasil
+  random_seed: 42
+data:
+  n_customers: 20000
+  n_products: 2000
+  n_interactions: 220000
+  n_orders: 30000
+  start_date: "2025-01-01"
+  end_date: "2026-09-30"
+business:
+  states: ["BA", "SP", "RJ", "MG", "PE", "CE", "PR", "RS", "SC", "GO", "DF", "PA"]
+  categories: ["Eletrônicos", "Casa", "Moda", "Beleza", "Esportes", "Livros", "Mercado"]

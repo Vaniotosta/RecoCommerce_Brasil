@@ -1,0 +1,36 @@
+{
+    "versao": "20261102_090621",
+    "data_corte": "2026-07-01",
+    "k": 10,
+    "pesos_interacao": {
+        "view": 1,
+        "click": 2,
+        "cart": 3,
+        "purchase": 5
+    },
+    "metodo": "similaridade_item_item_cosseno",
+    "fallback": "popularidade_global",
+    "fonte_dados": "dados_sinteticos",
+    "formato_matriz_treino": [
+        19999,
+        2000
+    ],
+    "valores_nao_nulos_matriz_treino": 187041,
+    "densidade_matriz_treino": 0.004676258812940647,
+    "metricas": {
+        "precision_10": 0.0025386313465783662,
+        "recall_10": 0.025386313465783666,
+        "map_10": 0.0056790707452959105,
+        "clientes_avaliados": 906,
+        "total_acertos": 23,
+        "compras_teste": 954,
+        "compras_relevantes": 932,
+        "cobertura_clientes": 1.0,
+        "cobertura_catalogo": 1.0,
+        "clientes_com_recomendacoes": 19999,
+        "produtos_recomendados_unicos": 2000,
+        "interacoes_treino": 188671,
+        "produtos_treino": 2000,
+        "nnz_matriz": 187041
+    }
+}
